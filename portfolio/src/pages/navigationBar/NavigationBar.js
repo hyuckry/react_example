@@ -17,7 +17,9 @@ const NavigationBar = () => {
     return (
         <div>
             <div id='home'>
-                <Navbar expand="md" className='navigation_container'>
+                <Navbar expand="md" className='navigation_container' style={{
+                    zIndex: '2', position: 'fixed', top: '0', width: '100%'
+                }} collapseOnSelect>
                     <Navbar.Brand style={{ marginLeft: '1rem' }} href="#home">fseason.info</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse style={{ justifyContent: 'flex-end', marginRight: '1rem' }}>
